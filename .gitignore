@@ -1,0 +1,16 @@
+.idea/
+.vscode/
+.cursor/
+
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+
+logs/
+*.log
+
+.env
+.env.*
+!.env.example
+.DS_Store
