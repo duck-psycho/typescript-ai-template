@@ -9,6 +9,7 @@
     "npm": ">=11"
   },
   "scripts": {
+    "prepare": "husky",
     "dev": "tsc-watch --project tsconfig.build.json --onSuccess \"node --enable-source-maps dist/index.js\"",
     "build": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true })\" && tsc --project tsconfig.build.json",
     "start": "node --enable-source-maps dist/index.js",
@@ -31,6 +32,7 @@
     "eslint-plugin-sonarjs": "^4.2.0",
     "eslint-plugin-unicorn": "^79.0.0",
     "globals": "^17.9.0",
+    "husky": "^9.1.7",
     "prettier": "^3.9.6",
     "tsc-watch": "^7.2.1",
     "typescript": "~6.0.3",

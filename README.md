@@ -37,6 +37,9 @@ console.log('Hello, World');
 
 Changes in `src/` are compiled automatically. The application restarts after a successful compilation.
 
+Installing dependencies also sets up Husky. Before each commit, Husky runs `npm run check`
+and blocks the commit if formatting, linting, or type checks fail.
+
 To build and run the compiled application:
 
 ```sh
